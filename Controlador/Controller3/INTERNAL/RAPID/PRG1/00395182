@@ -1,0 +1,304 @@
+MODULE Module1
+        CONST robtarget home:=[[955.495207776,0,1107.397459622],[0.258819045,0,-0.965925826,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c1a:=[[1117.82745884,-444.195,1038.178847679],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c1:=[[1165.520192645,-444.195,961.85451904],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c2_a:=[[1117.82745884,-244.195,1038.178847679],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c2:=[[1165.520192645,-244.195,961.85451904],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c3_a:=[[1144.323422065,-44.195,995.776442879],[0.275637356,0,0.961261696,0],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c3:=[[1165.520192645,-44.195,961.85451904],[0.275637356,0,0.961261696,0],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c4_a:=[[1144.323422065,155.805,995.776442879],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c4:=[[1165.520192645,155.805,961.85451904],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c5_a:=[[1144.323422065,355.805,995.77644288],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c5:=[[1165.520192645,355.805,961.85451904],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c6_a:=[[1015.699422065,-444.195,918.60244288],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c6:=[[1036.896192645,-444.195,884.68051904],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c7_a:=[[1015.699422065,-244.195,918.60244288],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c7:=[[1036.896192645,-244.195,884.68051904],[0.275637356,0,0.961261696,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c8_a:=[[1015.699422065,-44.195,918.60244288],[0.275637356,0,0.961261696,0],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c8:=[[1036.896192645,-44.195,884.68051904],[0.275637356,0,0.961261696,0],[-1,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c9_a:=[[1015.699422065,155.805,918.60244288],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c9:=[[1036.896192645,155.805,884.68051904],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c10_a:=[[999.80184413,355.805,944.043885759],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c10:=[[1036.896192645,355.805,884.68051904],[0.275637356,0,0.961261696,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fin_a:=[[177.584,1016.268,1000],[0.5,0.5,0.5,0.5],[0,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fin:=[[277.584,1016.268,1000],[0.5,0.5,0.5,0.5],[0,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget home_2:=[[1055.495207776,0,1280.602540378],[0.965925826,0,0.258819045,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget final_a:=[[177.584,1016.268,1000],[0.5,-0.5,0.5,-0.5],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget final:=[[278.084,1016.268,1000],[0.5,-0.5,0.5,-0.5],[0,1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget prehome:=[[309.604,254.998,1262.538],[0.396697298,0.585347123,0.410036045,0.576081975],[0,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c1a_3:=[[1144.323422065,-444.195,995.77644288],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c1_3:=[[1160.221,-444.195,970.335],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c2_a_2:=[[1144.323422065,-244.195,995.77644288],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c2_3:=[[1160.221,-244.195,970.335],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c3_a_2:=[[1144.323422065,-44.195,995.77644288],[0,0.961261696,0,0.275637356],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c3_3:=[[1160.221,-44.195,970.335],[0,0.961261696,0,0.275637356],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c4_a_2:=[[1144.323422065,155.805,995.77644288],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c4_3:=[[1160.221,155.805,970.335],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c5_a_2:=[[1144.323422065,355.805,995.77644288],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c5_3:=[[1160.221,355.805,970.335],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c6_a_2:=[[1015.699422065,-444.195,918.60244288],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c6_3:=[[1031.597,-444.195,893.161],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c7_a_2:=[[1015.699422065,-244.195,918.60244288],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c7_3:=[[1031.597,-244.195,893.161],[0,0.961261696,0,0.275637356],[-1,1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c8_a_2:=[[1015.699422065,-44.195,918.60244288],[0,0.961261696,0,0.275637356],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c8_3:=[[1031.597,-44.195,893.161],[0,0.961261696,0,0.275637356],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c9_a_3:=[[1015.699422065,155.805,918.60244288],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c9_2:=[[1031.597,155.805,893.161],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c10_a_2:=[[957.40830297,355.805,1011.88773344],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c10_3:=[[1031.597,355.805,893.161],[0,0.961261696,0,0.275637356],[0,-2,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget singular:=[[794.078577227,72.053971449,1440.197967774],[0.008993924,0.229595419,-0.191275883,-0.954263375],[-1,-1,1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget c3_a_2_2:=[[1086.031473643,-43.527299213,1055.048962422],[0.000858943,0.974553856,-0.004750994,0.224101477],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget sing:=[[996.034157953,0.89711627,1142.308388844],[0.004439032,-0.989602616,0.000644854,0.143758623],[0,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget sing_8:=[[1009.414631395,-44.524440453,1031.444612597],[0.010580344,0.969216357,0.000547425,0.245982539],[-1,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[127.584052063,1016.268015631,999.999997056],[0.499999999,0.500000042,0.500000004,0.499999956],[0,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10:=[[246.795972221,856.078436824,1122.33728984],[0.491799027,0.566655461,0.470411016,0.464487654],[0,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_2:=[[263.201550694,951.392827128,1178.426718398],[0.491799027,0.566655461,0.470411016,0.464487654],[0,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3:=[[255.576271719,958.762265661,1078.990575592],[0.491799027,0.566655461,0.470411016,0.464487654],[0,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+!***********************************************************
+    !
+    ! Module:  Module1
+    !
+    ! Description:
+    !   <Insert description here>
+    !
+    ! Author: farid
+    !
+    ! Version: 1.0
+    !
+    !***********************************************************
+    
+    
+    !***********************************************************
+    !
+    ! Procedure main
+    !
+    !   This is the entry point of your program
+    !
+    !***********************************************************
+    PROC main()
+	    c_1;
+        torno;
+        limpieza;
+        giro;
+        c_1_2;
+        c_2;
+        torno;
+        limpieza;
+        giro;
+        c_2_2;
+        c_3;
+        torno;
+        limpieza;
+        giro;
+        c_3_2;
+        c_4;
+        torno;
+        limpieza;
+        giro;
+        c_4_2;
+        c_5;
+        torno;
+        limpieza;
+        giro;
+        c_5_2;
+        c_6;
+        torno;
+        limpieza;
+        giro;
+        c_6_2;
+        c_7;
+        torno;
+        limpieza;
+        giro;
+        c_7_2;
+        c_8;
+        torno;
+        limpieza;
+        giro;
+        c_8_2;
+        c_9;
+        torno;
+        limpieza;
+        giro;
+        c_9_2;
+        c_10;
+        torno;
+        limpieza;
+        giro;
+        c_10_2;
+        
+        
+    ENDPROC
+    PROC c_1()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c1a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c1,v1000,fine,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c1a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_2()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c2_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c2,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c2_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_3()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ c3_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c3,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ c3_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_4()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c4_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c4,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c4_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_5()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c5_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c5,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c5_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_6()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c6_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c6,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c6_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_7()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c7_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c7,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c7_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_8()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ c8_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c8,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ c8_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_9()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c9_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c9,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c9_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_10()
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c10_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c10,v1000,fine,Pinza_2_1\WObj:=Workobject_2;
+        MoveL c10_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC torno()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ prehome,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL fin_a,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL fin,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        WaitTime 1;
+        MoveL fin_a,v1000,z100,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC giro()
+        MoveJ final_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL final,v1000,fine,Pinza_2_1\WObj:=Workobject_2;
+        WaitTime 1;
+        MoveL final_a,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+        MoveL home,v1000,z100,Pinza_2_1\WObj:=Workobject_2;
+    ENDPROC
+    PROC c_1_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c1a_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c1_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c1a_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_2_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c2_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c2_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c2_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_3_2()
+        MoveJ sing,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ c3_a_2_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ c3_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c3_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveJ c3_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ c3_a_2_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_4_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c4_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c4_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c4_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_5_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c5_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c5_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c5_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_6_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c6_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c6_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c6_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_7_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c7_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c7_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c7_a_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_8_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ sing_8,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ c8_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c8_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveJ c8_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ sing_8,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_9_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c9_a_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c9_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL c9_a_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC c_10_2()
+        MoveJ home_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveJ c10_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL c10_3,v1000,fine,Pinza_1\WObj:=Workobject_4;
+        MoveJ c10_a_2,v1000,z100,Pinza_1\WObj:=Workobject_4;
+        MoveL home_2,v1000,fine,Pinza_1\WObj:=Workobject_4;
+    ENDPROC
+    PROC limpieza()
+        MoveL Target_20,v1000,fine,Soplador\WObj:=Workobject_5;
+        MoveL Target_10,v1000,fine,Soplador\WObj:=Workobject_5;
+        MoveL Target_10_2,v1000,fine,Soplador\WObj:=Workobject_5;
+        MoveC Target_10_3,Target_10,v1000,fine,Soplador\WObj:=Workobject_5;
+        MoveL Target_20,v1000,fine,Soplador\WObj:=Workobject_5;
+    ENDPROC
+    PROC Path_10()
+        MoveJ final_a,v1000,z100,tool0\WObj:=Workobject_2;
+        MoveJ final,v1000,z100,tool0\WObj:=Workobject_2;
+        MoveJ final_a,v1000,z100,tool0\WObj:=Workobject_2;
+        MoveJ home,v1000,z100,tool0\WObj:=Workobject_2;
+    ENDPROC
+ENDMODULE
