@@ -1,0 +1,9 @@
+MODULE CalibData
+    PERS tooldata Pinza_1:=[TRUE,[[-100,0,70],[0.707107,0,-0.707107,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    PERS tooldata Vara:=[TRUE,[[0,0,250],[0.707107,0,0,0.707107]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    PERS tooldata Soplador:=[TRUE,[[0,-70,70],[0.5,0.5,-0.5,0.5]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_2:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    TASK PERS wobjdata Workobject_4:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    PERS tooldata Pinza_2_1:=[TRUE,[[140,0,70],[0.707107,0,0.707107,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_5:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+ENDMODULE
