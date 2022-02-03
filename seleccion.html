@@ -67,53 +67,68 @@ div {text-align: center;}
   </header><!-- End Header -->
 
   <main id="main">
-    <br> <br> <br> <br>
-    <section class="container" data-aos="fade-up" date-aos-delay="200">
-      <h1 class="section-title">Selección de productos a empacar</h1>
+    <section class="breadcrumbs">
+    </section>
+    <div class="section-title" data-aos="fade-up">
+      <h1>Selección de robots</h1>
+      <p>Para esta aplicación se requieren dos robots industriales ABB, el primero para la aplicación del potenciador de adherencia y el segundo para la manipulación de los vidrios. </p>
+      </div>
+
+
+      <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 video-box">
+            <img center src="assets/img/r1.PNG" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+
+              <h4 class="title">Manipulación de los vidrios</h4>
+              <p>La selección del robot se dio a través de dos criterios, alcance horizontal y capacidad de carga. Como primera medida se halla la carga a que debe manipular el robot.</p>
+              <ul class="c4">
+                <li>Peso gripper = 11 kg </li>
+                <li>Peso ventanas = aprox. 10 kg</li>
+              </ul>
+              <p>Como resultado se necesita un robot con una capacidad de carga mayor a 21 kg. Por lo tanto, se procede a preseleccionar en RobotStudio robots que cumplan este requisito, donde se encuentra que los robots con la mínima capacidad de carga que cumplen este requerimiento son de 40 kg. </p>
+              <p>A través de Inventor y utilizando los modelos de la Van y la banda transportadora se determina el alcance necesario para llevar a cabo la operación. Así, la referencia del robot seleccionado es IRB4600_40_255_C_01, el cual tiene las siguientes características principales:</p>
+              <ul class="c4">
+                <li>Capacidad de carga = 40 kg</li>
+                <li>Alcance horizontal = 2.55 m</li>
+              </ul>
+              <a href="https://new.abb.com/products/robotics/es/robots-industriales/irb-4600">IRB 4600</a>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
     </section>
     <section class="why-us" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-        <p>
-          Se comenzó con una lista inicial de 5 productos que resultaran atractivos para el proyecto. Los productos fueron los siguientes:
-        </p>
-        <ul>
-          <li>Aguacate hass</li>
-          <li>Limón </li>
-          <li>Tomate cherry </li>
-          <li>Champiñón </li>
-          <li>Fresa </li>
-        </ul>
+
+        <div class="row">
+          <div class="col-lg-4 video-box">
+            <img center src="assets/img/r2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+
+              <h4 class="title">Potenciador de adherencia.</h4>
+              <p>Para este robot la capacidad de carga requerida es menor al robot de manipulación, pues solo requiere sujetar la herramienta que tiene una masa no mayor a 3 kg. Por otro lado, el alcance y la zona de trabajo del robot deben permitir un recorrido en un área aproximadamente plana en un perímetro de aproximadamente 1,4 x 0,7 m. Con estos criterios y verificando el espacio de trabajo en RobotStudio se eligió el robot IRB2600_12_165_C_01 con alcance de 1,65 m y carga máxima de 12 kg.</p>
+              
+            </div>
+            <a href="https://new.abb.com/products/robotics/es/robots-industriales/irb-2600#:~:text=La%20familia%20IRB%202600%20contiene,soldadura%20al%20arco%20y%20procesos.">IRB 2600</a>
+          </div>
+          
+        </div>
       </div>
     </section>
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <p> Despues de seguir las recomendaciones del profesor Ricardo y analizando los productos, se decidió trabajar con los <b>aguacate hass</b> y <b>limón.</b>
-        </p>
-        <br>
-        <p>
-          Las frutas seleccionadas presentan un flujo de trabajo similar en su procesamiento. La diferencia está en que para los limones hay una etapa de encerado justo antes de su empacado, mientras que para los aguacates esta no es requerida.
-        </p>
-
-        <br>
-        <p>
-          Se optó por un empaque en canastillas de 60x40x13 cm (<a href="" target="_blank">enlace</a>). En ellas, dadas las dimensiones de los frutos, caben 40 aguacates organizados en un arreglo de 8x5, equivalente a un peso de hasta 12 kg. En cuanto a los limones, estos caben organizados en dos niveles completando un peso de hasta 8 kg.
-        </p>
-        <br>
-        <p class="card-text"><b>Imagen de la canastilla:</b></p>
-        <img class="centering" src="assets/img/canastilla.png">
-      </div>
-    </section>
-
-    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-        <p>
-          Las canastillas llenas se apilarían en palets ordenadas en 2x2 hasta completar 10 niveles. El tipo de palet que se utilizaría para la aplicación sería un <b>palet europeo,</b> que tiene unas dimensiones de 120x80x14.4 cm.
-        </p>
-      </div>
-    </section>
-
-    
 
   </main><!-- End #main -->
 
